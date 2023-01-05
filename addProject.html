@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Submit Project</title>
+        <meta charset="UTF-8">
+        <link rel= "stylesheet" href= "https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    </head>
+
+    <form id="add_project" action="SubmitProject.php" method="post">
+        
+        <label for="project_name" id="projectname_label">Project Name</label>
+        <input type="text" id="project_name" name="project_name" required> 
+
+        <label for="email" id="email_lable">Email</label> 
+        <input type="email" id="email" name="email">
+
+        <label for="project_description" id="project_label">Project Description</label>
+        <input type="text" id="project_description" name="project_description"> 
+
+        <label for="project_skills" id="skills_label">Skills Needed</label>
+        <input type="text" id="project_skills" name="project_skills"> 
+
+        <label for="startdate" id="startdate_label">Start Date</label>
+        <input type="date" id="startdate" name="startdate">
+
+        <label for="enddate" id="enddate_label">End Date</label>
+        <input type="date" id="enddate" name="enddate"> 
+
+        <button type="submit" id="submit" value="submit">Submit</button>
+    </form>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Submit a Project</title>
+
+        <!-- CSS -->
+        <!-- <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500"> -->
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="assets/css/form-elements.css">
+        <link rel="stylesheet" href="Medso.css">
+
+      
+
+        <!-- Favicon and touch icons -->
+        <link rel="shortcut icon" href="assets/ico/favicon.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+
+    </head>
+
+    <body>
+
+        <!-- Top content -->
+        <div class="top-content">
+        	
+            <div class="inner-bg">
+                <div class="container">
+                	
+                    <div class="row">
+                        <div class="col-sm-8 col-sm-offset-2 text">
+                            <h1><strong>Submit Project</strong></h1>
+                            <div class="description">
+                            	<p>Submit Project</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+	                        
+		                
+	                        
+                        </div>
+                        
+                        <div class="col-sm-1 middle-border"></div>
+                        <div class="col-sm-1"></div>
+                        	
+                        <div class="col-sm-5">
+                        	
+                        	<div class="form-box">
+                        		<div class="form-top">
+	                        		<div class="form-top-left">
+	                        			<h3>Enquiry now</h3>
+	                            		<p>Fill in the form below to Submit a Project</p>
+	                        		</div>
+	                        		<div class="form-top-right">
+	                        			<i class="fa fa-pencil"></i>
+	                        		</div>
+	                            </div>
+	                            <div class="form-bottom">
+									<form method="post" onSubmit="return enquiry_form( this );" id="enquiry-form" class="enquiry-form"></form>
+				                    	
+									<form id="survey-form" class="text-md-right">
+										<div class="form-group row">
+										  <label for="name" id="name-label" class="col-md-4 offset-md-4 col-form-label">Name:</label>
+										<input type="text" id="name" name="name" class="form-control col-md-4" placeholder="Enter your name" required>
+										</div>
+										<div class="form-group row">
+										  <label for="gender" id="gender-label" class="col-md-2 offset-md-4 col-form-label">Gender:</label>
+										<input type="text" id="gender" name="gender" class="form-control col-md-4" placeholder="Enter your gender" required>
+										</div>
+										<div class="form-group row">
+										  <label for="race" id="race-label" class="col-md-2 offset-md-4 col-form-label">Race:</label>
+										<input type="text" id="race" name="race" class="form-control col-md-4" placeholder="Enter your race" required>
+										</div>
+										<div class="form-group row">
+										  <label for="email" id="email-label" class="col-md-2 offset-md-6 col-form-label">Email Address (Using Institutional Email):</label>
+										<input type="email" id="email" name="email" class="form-control col-md-6" placeholder="Enter your email" 
+											   required>
+										</div>
+										<div class="form-group row">
+										  <label for="institution" id="institution-label" class="col-md-2 offset-md-4 col-form-label">Institution:</label>
+										<input type="text" id="institution" name="institution" class="form-control col-md-4" placeholder="Enter the name of your institution" required>
+										</div>
+										</div>
+										  
+										  <div class="form-group row"> 
+										  <label for Membership="col-md-6 col-form-label">Membership Account Status</label>
+											<select id="dropdown" class="form-control col-md-2">
+											 <option value="">Select One:</option>
+											 <option value="1">Student</option>
+											 <option value="2">Resident</option>
+											 <option value="3">Fellow</option>
+											 <option value="4">Attending Physician</option>
+											 <option value="5">Research Faculty</option>
+											 <option value="6">Administrator</option>
+											   </select>
+												</div>
+
+
+												  <div>
+													<div class="form-group row text-md-left"> 
+														<label class="col-md-6 col-form-label text-md-right" for="Title">Project Title</label>
+														   
+															<textarea class="form-control" rows="6" id="additional comments" name="comment" placeholder="Please provide any comments or suggetions"></textarea>
+														
+														</div>
+														</div>
+												  <div class="form-group row text-md-left"> 
+													<label class="col-md-6 col-form-label text-md-right" for="Skills">Skills you are looking for:</label>
+														<textarea class="form-control" rows="6" id="Skills" name="comment" placeholder="Please provide any comments or suggetions"></textarea>
+													
+													</div>
+													<div class="form-group row text-md-left"> 
+													<label class="col-md-6 col-form-label text-md-right" for="sescribe">Project Description</label>
+													   
+														<textarea class="form-control" rows="6" id="describe" name="comment" placeholder="Please provide a description of the project"></textarea>
+													
+													</div>
+												  
+												  <div class="form-group row text-md-left"> 
+												  <label class="col-md-6 col-form-label text-md-right" for="additional comments">Please provide any comments or suggestions</label>
+													 
+													  <textarea class="form-control" rows="6" id="additional comments" name="comment" placeholder="Please provide any comments or suggetions"></textarea>
+												  
+												  </div>
+												  
+									
+												  
+
+				                        <button type="submit" class="btn">Send!</button>
+				                    </form>
+			                    </div>
+                        	</div>
+                        	
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- Footer -->
+        <footer>
+        	<div class="container">
+        		<div class="row">
+        			
+        			<div class="col-sm-8 col-sm-offset-2">
+        				<div class="footer-border"></div>
+        				<p>Medsopotamia</p>
+        			</div>
+        			
+        		</div>
+        	</div>
+        </footer>
+
+        <!-- Javascript -->
+        <script src="assets/js/jquery-1.11.1.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/js/jquery.backstretch.min.js"></script>
+        <script src="assets/js/scripts.js"></script>
+        
+        <!--[if lt IE 10]>
+            <script src="assets/js/placeholder.js"></script>
+        <![endif]-->
+
+    </body>
+
+</html>
